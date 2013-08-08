@@ -1,4 +1,5 @@
-#OOP python prototype of Fantasy Dota 2
+#OOP python prototype of Fantasy Dota 2 for professional games
+import requests
 import config
 apikey = config.apikey
 categories = ['k','d','a','gpm','xpm','lh','denies']
@@ -15,4 +16,5 @@ def createNewLeague():
     #initiate
 
 def draft(league):
+    r = requests.get('http://api.steampowered.com/IDOTA2Match_')
     pass
